@@ -1,3 +1,4 @@
+import importedCatalog from "./generated/drive-catalog.json";
 export type Process = {
   slug: string;
   name: string;
@@ -11,14 +12,17 @@ export type Process = {
   applications: string[];
   accent: string;
   icon: string;
-  status?: "Proposed" | "Reviewed" | "Verified" | "Established";
+  sourceKey?: string;
+  sourceFile?: string;
+  images?: { key: string; title: string; source: string }[];
+  status?: "Imported" | "Proposed" | "Reviewed" | "Verified" | "Established";
   related?: string[];
   parameters?: { name: string; value: string; unit: string; context: string; source: string }[];
   evidence?: { title: string; detail: string }[];
   visuals?: { title: string; caption: string }[];
 };
 
-export const processes: Process[] = [
+const originalProcesses: Process[] = [
   {
     slug: "broaching",
     name: "Broaching",
@@ -126,3 +130,5 @@ export const processGroups = [
   { name: "Surface Engineering", count: 8 },
   { name: "Hybrid Processes", count: 5 },
 ];
+
+export const processes: Process[] = [...(importedCatalog as Process[]), ...originalProcesses.filter(p => !importedCatalog.some(i => i.slug === p.slug))];

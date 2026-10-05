@@ -8,3 +8,8 @@ node_modules/
 npm-debug.log*
 pnpm-debug.log*
 .DS_Store
+
+# Original import archives remain local; catalog metadata is versioned.
+V2/
+*.zip
+imports/drive-v2/upload-report.json

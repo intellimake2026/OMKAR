@@ -1,6 +1,2 @@
-import { ManufacturingLibrary } from "@/components/manufacturing-library";
-import { processes } from "@/lib/processes";
-
-export default function Home() {
-  return <ManufacturingLibrary initialProcesses={processes} />;
-}
+import { Portal } from "@/components/portal";
+export default function Home() { return <Portal screen="home" />; }

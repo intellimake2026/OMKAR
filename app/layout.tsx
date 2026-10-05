@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 
 export const metadata: Metadata = {
-  title: "OMKAR — Open Manufacturing Knowledge & Research",
+  title: "OMKAR — Open Manufacturing Knowledge and Resources",
   description: "Explore manufacturing processes, materials, tooling, and engineering knowledge.",
 };
 

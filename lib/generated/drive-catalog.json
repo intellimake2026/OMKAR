@@ -1,0 +1,546 @@
+[
+  {
+    "slug": "arbor-milling",
+    "name": "Arbor Milling",
+    "family": "Subtractive Manufacturing",
+    "group": "Machining",
+    "summary": "Arbor milling (often referred to as horizontal milling or gang milling using an arbor) is a Mass-Reducing (Subtractive) machining process. It utilizes a\u2026",
+    "description": "Arbor milling (often referred to as horizontal milling or gang milling using an arbor) is a Mass-Reducing (Subtractive) machining process. It utilizes a rotating, multi-tooth peripheral milling cutter mounted on a rigid horizontal shaft (the arbor) supported by an overarm, making contact with a workpiece to remove material in the form of chips via mechanical shear.",
+    "characteristics": [],
+    "features": [
+      "Keyways",
+      "Slots",
+      "Flatness",
+      "Surface Finish"
+    ],
+    "materials": [
+      "Plastics",
+      "Composites"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "A",
+    "status": "Imported",
+    "related": [
+      "gear-hobbing",
+      "broaching",
+      "die-threading",
+      "drilling"
+    ],
+    "sourceKey": "content/drive-v2/arbor-milling/342a6b427af1e299.md",
+    "sourceFile": "Arbor_Milling_Process_Profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/arbor-milling/76a6ccd3d11538ba.jpeg",
+        "title": "Arbor Milling diagram",
+        "source": "arbor_milling.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "gear-hobbing",
+    "name": "Gear Hobbing",
+    "family": "Subtractive Manufacturing",
+    "group": "Machining",
+    "summary": "Gear hobbing is a continuous gear-generating machining process used to cut teeth into cylindrical blanks (spurs, helices, splines, and worm gears) using a\u2026",
+    "description": "Gear hobbing is a continuous gear-generating machining process used to cut teeth into cylindrical blanks (spurs, helices, splines, and worm gears) using a specialized rotating cutting tool called a hob. The hob and the workpiece rotate simultaneously in a synchronized kinematic relationship, creating teeth through progressive, incremental chip removal.",
+    "characteristics": [],
+    "features": [
+      "Splines",
+      "Gears",
+      "Surface Finish"
+    ],
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Brass",
+      "Bronze"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "G",
+    "status": "Imported",
+    "related": [
+      "arbor-milling",
+      "broaching",
+      "die-threading",
+      "drilling"
+    ],
+    "sourceKey": "content/drive-v2/gear-hobbing/99fc4a9f6c726cb7.md",
+    "sourceFile": "Gear_Hobbing_Process_Profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/gear-hobbing/823fe44a261e7442.jpeg",
+        "title": "Gear Hobbing diagram",
+        "source": "gear_milling.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "band-filing",
+    "name": "Band Filing",
+    "family": "Subtractive Manufacturing",
+    "group": "Grinding & Finishing",
+    "summary": "Band filing is a continuous, mass-reducing machining process that utilizes a flexible, continuous steel band fitted with interlocking file segments (a file\u2026",
+    "description": "Band filing is a continuous, mass-reducing machining process that utilizes a flexible, continuous steel band fitted with interlocking file segments (a file band) to remove material from a workpiece. Running continuously in one direction over upper and lower wheels on a band machining frame, it provides uniform, unidirectional filing action for contouring, deburring, and precise surface finishing.",
+    "characteristics": [],
+    "features": [
+      "Surface Finish"
+    ],
+    "materials": [
+      "Steel",
+      "Plastics",
+      "Composites"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "B",
+    "status": "Imported",
+    "related": [
+      "centerless-grinding",
+      "cylindrical-grinding",
+      "honing"
+    ],
+    "sourceKey": "content/drive-v2/band-filing/fa638cf39926b76d.md",
+    "sourceFile": "band_filing_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/band-filing/6df8561889c114b0.jpeg",
+        "title": "Band Filing diagram",
+        "source": "band_filing.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "band-sawing",
+    "name": "Band Sawing",
+    "family": "Subtractive Manufacturing",
+    "group": "Sawing",
+    "summary": "Band sawing is a continuous mass-reducing (machining/cutting) manufacturing process that uses a long, flexible, continuous loop of serrated metal blade (a\u2026",
+    "description": "Band sawing is a continuous mass-reducing (machining/cutting) manufacturing process that uses a long, flexible, continuous loop of serrated metal blade (a saw band) stretched between two or more rotating wheels to cut material.",
+    "characteristics": [],
+    "features": [
+      "Surface Finish"
+    ],
+    "materials": [
+      "Steel",
+      "Plastics"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "B",
+    "status": "Imported",
+    "related": [
+      "circular-sawing"
+    ],
+    "sourceKey": "content/drive-v2/band-sawing/ff65c64c1b7a4ad9.md",
+    "sourceFile": "band_sawing_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/band-sawing/271ea7ff97ec5e85.jpeg",
+        "title": "Band Sawing diagram",
+        "source": "band_sawing.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "broaching",
+    "name": "Broaching",
+    "family": "Subtractive Manufacturing",
+    "group": "Machining",
+    "summary": "Broaching is a high-precision, high-efficiency machining process that uses a multi-toothed cutting tool (a broach) to progressively remove material from a\u2026",
+    "description": "Broaching is a high-precision, high-efficiency machining process that uses a multi-toothed cutting tool (a broach) to progressively remove material from a workpiece in a single linear or rotary pass. As the tool advances, each successive tooth rises slightly higher than the previous one (Rise Per Tooth), shaping the workpiece to the exact inverse geometry of the tool.",
+    "characteristics": [],
+    "features": [
+      "Keyways",
+      "Splines",
+      "Holes",
+      "Surface Finish",
+      "Profiles"
+    ],
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Brass",
+      "Titanium",
+      "Cast Iron",
+      "Superalloys"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "B",
+    "status": "Imported",
+    "related": [
+      "arbor-milling",
+      "gear-hobbing",
+      "die-threading",
+      "drilling"
+    ],
+    "sourceKey": "content/drive-v2/broaching/bd5ccafa3b19271a.md",
+    "sourceFile": "broaching_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/broaching/eae3c5463abcb20f.jpeg",
+        "title": "Broaching diagram",
+        "source": "broaching.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "centerless-grinding",
+    "name": "Centerless Grinding",
+    "family": "Subtractive Manufacturing",
+    "group": "Grinding & Finishing",
+    "summary": "Centerless grinding is an abrasive mass-reducing machining process used to remove material from cylindrical or tubular workpieces without using a spindle or\u2026",
+    "description": "Centerless grinding is an abrasive mass-reducing machining process used to remove material from cylindrical or tubular workpieces without using a spindle or centers to fix and locate the part. The workpiece is supported on a work-rest blade and held between a high-speed grinding wheel and a slower-speed regulating wheel.",
+    "characteristics": [],
+    "features": [],
+    "materials": [
+      "Steel"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "C",
+    "status": "Imported",
+    "related": [
+      "band-filing",
+      "cylindrical-grinding",
+      "honing"
+    ],
+    "sourceKey": "content/drive-v2/centerless-grinding/eea2b53d96fef233.md",
+    "sourceFile": "centerless_grinding_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/centerless-grinding/3fc50f5dedf86d94.jpeg",
+        "title": "Centerless Grinding diagram",
+        "source": "centerless_grinding(1).jpeg"
+      },
+      {
+        "key": "content/drive-v2/centerless-grinding/4b51093ea93d93f1.jpeg",
+        "title": "Centerless Grinding diagram 2",
+        "source": "centerless_grinding.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "circular-sawing",
+    "name": "Circular Sawing",
+    "family": "Subtractive Manufacturing",
+    "group": "Sawing",
+    "summary": "A mechanical mass-reducing (subtractive) manufacturing process that utilizes a powered rotating circular disk blade\u2014equipped with teeth or coated with\u2026",
+    "description": "A mechanical mass-reducing (subtractive) manufacturing process that utilizes a powered rotating circular disk blade\u2014equipped with teeth or coated with abrasive particles\u2014to shear or abrade a narrow channel (kerf) through a workpiece, separating material or trimming stock to required dimensions.",
+    "characteristics": [],
+    "features": [
+      "Surface Finish"
+    ],
+    "materials": [
+      "Steel",
+      "Plastics"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "C",
+    "status": "Imported",
+    "related": [
+      "band-sawing"
+    ],
+    "sourceKey": "content/drive-v2/circular-sawing/5ab883ca113a2c46.md",
+    "sourceFile": "circular_sawing_process_profile (1).md",
+    "images": []
+  },
+  {
+    "slug": "conventional-blanking",
+    "name": "Conventional Blanking",
+    "family": "Subtractive Manufacturing",
+    "group": "Sheet Cutting",
+    "summary": "Conventional blanking is a high-volume, mass-reducing mechanical shearing process used to cut flat, closed-contour geometric shapes (\"blanks\") out of sheet\u2026",
+    "description": "Conventional blanking is a high-volume, mass-reducing mechanical shearing process used to cut flat, closed-contour geometric shapes (\"blanks\") out of sheet metal stock using a punch and die set installed in a mechanical or hydraulic press. The punched-out piece is the desired product, while the remaining sheet metal is scrap.",
+    "characteristics": [],
+    "features": [
+      "Flatness"
+    ],
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Brass"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "C",
+    "status": "Imported",
+    "related": [
+      "fine-blanking"
+    ],
+    "sourceKey": "content/drive-v2/conventional-blanking/32907cf11687e943.md",
+    "sourceFile": "conventional_blanking_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/conventional-blanking/f19ce4bf18ca2751.jpeg",
+        "title": "Conventional Blanking diagram",
+        "source": "conventional_blanking.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "cylindrical-grinding",
+    "name": "Cylindrical Grinding",
+    "family": "Subtractive Manufacturing",
+    "group": "Grinding & Finishing",
+    "summary": "A precision abrasive material removal process used to shape and finish the external or internal cylindrical surfaces of metallic, ceramic, or composite\u2026",
+    "description": "A precision abrasive material removal process used to shape and finish the external or internal cylindrical surfaces of metallic, ceramic, or composite workpieces. The process operates through micro-cutting and erosion action as a high-speed rotating abrasive grinding wheel engages with a rotating workpiece.",
+    "characteristics": [],
+    "features": [
+      "Holes",
+      "Surface Finish",
+      "Profiles"
+    ],
+    "materials": [
+      "Aluminum"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "C",
+    "status": "Imported",
+    "related": [
+      "band-filing",
+      "centerless-grinding",
+      "honing"
+    ],
+    "sourceKey": "content/drive-v2/cylindrical-grinding/031ffee68c5acb51.md",
+    "sourceFile": "cylindrical_grinding_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/cylindrical-grinding/c91800c7153a42eb.jpeg",
+        "title": "Cylindrical Grinding diagram",
+        "source": "cylindrical_grinding_process_profile.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "die-threading",
+    "name": "Die Threading",
+    "family": "Subtractive Manufacturing",
+    "group": "Machining",
+    "summary": "Die Threading is a traditional mass-reducing (machining) process used to cut external screw threads on the outside surface of a cylindrical workpiece (such\u2026",
+    "description": "Die Threading is a traditional mass-reducing (machining) process used to cut external screw threads on the outside surface of a cylindrical workpiece (such as rods, bolts, or pipes). It uses a specialized cutting tool called a \"die\" with internal cutting edges or teeth corresponding to the desired thread profile.",
+    "characteristics": [],
+    "features": [
+      "Threads"
+    ],
+    "materials": [
+      "Steel"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "D",
+    "status": "Imported",
+    "related": [
+      "arbor-milling",
+      "gear-hobbing",
+      "broaching",
+      "drilling"
+    ],
+    "sourceKey": "content/drive-v2/die-threading/136c71f12042ac7e.md",
+    "sourceFile": "die_threading_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/die-threading/c76d554803c5be3a.jpeg",
+        "title": "Die Threading diagram",
+        "source": "die_threading.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "drilling",
+    "name": "Drilling",
+    "family": "Subtractive Manufacturing",
+    "group": "Machining",
+    "summary": "A mass-reducing (subtractive), mechanical machining process that uses a rotating cutting tool (drill bit) to produce or enlarge a circular hole in a solid\u2026",
+    "description": "A mass-reducing (subtractive), mechanical machining process that uses a rotating cutting tool (drill bit) to produce or enlarge a circular hole in a solid workpiece. The tool applies axial thrust force ($F_z$) and rotational torque ($M_z$) to shear away material in the form of chips through mechanical fracture and plastic deformation along the main cutting edges.",
+    "characteristics": [],
+    "features": [
+      "Holes",
+      "Surface Finish"
+    ],
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Titanium",
+      "Composites",
+      "Superalloys"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "D",
+    "status": "Imported",
+    "related": [
+      "arbor-milling",
+      "gear-hobbing",
+      "broaching",
+      "die-threading"
+    ],
+    "sourceKey": "content/drive-v2/drilling/12f44fbde8ab6a02.md",
+    "sourceFile": "drilling_process_profile.md",
+    "images": [
+      {
+        "key": "content/drive-v2/drilling/41b71f0be312c5f0.jpeg",
+        "title": "Drilling diagram",
+        "source": "drilling.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "end-milling",
+    "name": "End Milling",
+    "family": "Subtractive Manufacturing",
+    "group": "Machining",
+    "summary": "End milling is a versatile subtractive (mass-reducing, mechanical, contact) manufacturing process where a rotating cylindrical cutting tool with cutting\u2026",
+    "description": "End milling is a versatile subtractive (mass-reducing, mechanical, contact) manufacturing process where a rotating cylindrical cutting tool with cutting teeth (flutes) on both its peripheral surface and flat/radiused end face removes material from a stationary or moving workpiece to produce flat surfaces, slots, pockets, complex contours, and 3D profiles.",
+    "characteristics": [],
+    "features": [
+      "Slots",
+      "Holes",
+      "Surface Finish",
+      "Profiles"
+    ],
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Brass",
+      "Titanium",
+      "Cast Iron",
+      "Plastics",
+      "Composites"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "E",
+    "status": "Imported",
+    "related": [
+      "arbor-milling",
+      "gear-hobbing",
+      "broaching",
+      "die-threading"
+    ],
+    "sourceKey": "content/drive-v2/end-milling/8126a5420ddf5bcf.md",
+    "sourceFile": "end_milling_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/end-milling/6902198e60331c39.jpeg",
+        "title": "End Milling diagram",
+        "source": "end_milling.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "fine-blanking",
+    "name": "Fine Blanking",
+    "family": "Subtractive Manufacturing",
+    "group": "Sheet Cutting",
+    "summary": "Fine blanking is a specialized high-precision sheet metal forming/shearing process that produces fully sheared, flat edges with smooth surfaces, no edge\u2026",
+    "description": "Fine blanking is a specialized high-precision sheet metal forming/shearing process that produces fully sheared, flat edges with smooth surfaces, no edge fracture, and tight dimensional tolerances in a single press stroke. Unlike conventional blanking, it completely eliminates die roll and break-out zones by applying triple-action mechanical/hydraulic clamping forces (a V-ring impingement ring outside the shear line and a counter-punch inside the shear line) against the main punch during cutting with extremely tight die clearances.",
+    "characteristics": [],
+    "features": [
+      "Flatness",
+      "Surface Finish",
+      "Profiles"
+    ],
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Brass"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "F",
+    "status": "Imported",
+    "related": [
+      "conventional-blanking"
+    ],
+    "sourceKey": "content/drive-v2/fine-blanking/2a52b067f16979fe.md",
+    "sourceFile": "fine_blanking_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/fine-blanking/f46fd25fd400d48a.jpeg",
+        "title": "Fine Blanking diagram",
+        "source": "fine_blanking.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "gear-shaping",
+    "name": "Gear Shaping",
+    "family": "Subtractive Manufacturing",
+    "group": "Machining",
+    "summary": "A traditional material-removal (machining) manufacturing process used to generate gear teeth, splines, and keyways. It uses a reciprocating, circular\u2026",
+    "description": "A traditional material-removal (machining) manufacturing process used to generate gear teeth, splines, and keyways. It uses a reciprocating, circular pinion-shaped (or rack-shaped) cutting tool that rotates in synchronized motion with the cylindrical gear blank.",
+    "characteristics": [],
+    "features": [
+      "Keyways",
+      "Splines",
+      "Gears",
+      "Surface Finish"
+    ],
+    "materials": [
+      "Steel",
+      "Brass",
+      "Bronze",
+      "Cast Iron",
+      "Plastics"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "G",
+    "status": "Imported",
+    "related": [
+      "arbor-milling",
+      "gear-hobbing",
+      "broaching",
+      "die-threading"
+    ],
+    "sourceKey": "content/drive-v2/gear-shaping/674bcb3b6b083461.md",
+    "sourceFile": "gear_shaping_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/gear-shaping/15432a65e1fc3f96.jpeg",
+        "title": "Gear Shaping diagram",
+        "source": "gear_shaping.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "honing",
+    "name": "Honing",
+    "family": "Subtractive Manufacturing",
+    "group": "Grinding & Finishing",
+    "summary": "Honing is an abrasive machining process that produces a high-precision, low-roughness surface on a metal workpiece by rubbing an expanding abrasive stone or\u2026",
+    "description": "Honing is an abrasive machining process that produces a high-precision, low-roughness surface on a metal workpiece by rubbing an expanding abrasive stone or set of sticks against it along a controlled dual-motion (rotational and reciprocating) path. It is primarily used to finish internal cylindrical surfaces (bores) to achieve tight geometric tolerances (roundness, straightness, cylindrical taper) and a specific cross-hatch surface texture required for lubrication retention.",
+    "characteristics": [],
+    "features": [
+      "Bores"
+    ],
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Cast Iron"
+    ],
+    "applications": [],
+    "accent": "#ef691e",
+    "icon": "H",
+    "status": "Imported",
+    "related": [
+      "band-filing",
+      "centerless-grinding",
+      "cylindrical-grinding"
+    ],
+    "sourceKey": "content/drive-v2/honing/d202bedb126da67b.md",
+    "sourceFile": "honing_process_profile (1).md",
+    "images": [
+      {
+        "key": "content/drive-v2/honing/7f7ff1cff4d22b39.jpeg",
+        "title": "Honing diagram",
+        "source": "honing.jpeg"
+      }
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   ArrowRight,
   BarChart3,
@@ -35,13 +36,14 @@ import {
 import type { Process } from "@/lib/processes";
 import { processGroups } from "@/lib/processes";
 
-type Props = { initialProcesses: Process[] };
+type Props = { initialProcesses: Process[]; initialSlug?: string; embedded?: boolean };
 type Tab = "Overview" | "Process details" | "Materials" | "Equipment" | "Tooling" | "Parameters" | "Capabilities" | "Quality" | "Limitations" | "Applications" | "Evidence";
 
 const tabs: Tab[] = ["Overview", "Process details", "Materials", "Equipment", "Tooling", "Parameters", "Capabilities", "Quality", "Limitations", "Applications", "Evidence"];
 
-export function ManufacturingLibrary({ initialProcesses }: Props) {
-  const [selectedSlug, setSelectedSlug] = useState(initialProcesses[0].slug);
+export function ManufacturingLibrary({ initialProcesses, initialSlug, embedded = false }: Props) {
+  const router = useRouter();
+  const [selectedSlug, setSelectedSlug] = useState(initialSlug ?? initialProcesses[0].slug);
   const [search, setSearch] = useState("");
   const [tab, setTab] = useState<Tab>("Overview");
   const [mode, setMode] = useState<"text" | "visual">("text");
@@ -58,6 +60,7 @@ export function ManufacturingLibrary({ initialProcesses }: Props) {
   }, [initialProcesses, search]);
 
   function chooseProcess(slug: string) {
+    if (embedded) { router.push(`/processes/${slug}`); return; }
     setSelectedSlug(slug);
     setTab("Overview");
     setSidebarOpen(false);
@@ -65,15 +68,15 @@ export function ManufacturingLibrary({ initialProcesses }: Props) {
 
   return (
     <main className="app-shell">
-      <header className="brand-header">
+      {!embedded && <><header className="brand-header">
         <div className="brand-mark" aria-hidden="true"><Boxes size={28} /><span /></div>
         <div className="wordmark">OMKAR</div>
-        <div className="brand-expansion" aria-label="Open Manufacturing Knowledge and Research">
+        <div className="brand-expansion" aria-label="Open Manufacturing Knowledge and Resources">
           <span><b>O</b><small>Open</small></span>
           <span><b>M</b><small>Manufacturing</small></span>
           <span><b>K</b><small>Knowledge</small></span>
-          <span><b>A</b><small>&amp; Research</small></span>
-          <span><b>R</b><small>Resource</small></span>
+          <span><b>A</b><small>and</small></span>
+          <span><b>R</b><small>Resources</small></span>
         </div>
         <p>Connecting manufacturing knowledge. Powering smarter engineering.</p>
         <div className="account-actions">
@@ -97,20 +100,20 @@ export function ManufacturingLibrary({ initialProcesses }: Props) {
         </label>
         <button className="ask-button"><Sparkles size={16} /><span>Ask OMKAR</span></button>
         <button className="related-toggle" onClick={() => setRelatedOpen(true)} aria-label="Open related knowledge"><Network size={17} /></button>
-      </nav>
+      </nav></>}
 
       <div className="workspace">
         {sidebarOpen && <button className="sidebar-scrim" aria-label="Close process library" onClick={() => setSidebarOpen(false)} />}
         <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
           <div className="sidebar-heading"><span><BookOpen size={18} />Process library</span><button onClick={() => setSidebarOpen(false)}><X size={18} /></button></div>
           <label className="side-search"><Search size={15} /><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Find a process" /></label>
-          <div className="library-label">Manufacturing families <span>9</span></div>
+          <div className="library-label">Manufacturing families <span>{processGroups.length}</span></div>
           <div className="tree">
             {processGroups.map((group) => (
               <div key={group.name}>
-                <button className={`group-row ${group.active ? "expanded" : ""}`}>
+                <button className={`group-row ${group.active ? "expanded" : ""}`} onClick={() => { if (embedded) router.push(`/processes?family=${encodeURIComponent(group.name)}`); }}>
                   {group.active ? <ChevronDown size={15} /> : <ChevronRight size={15} />}
-                  <span>{group.name}</span><small>{group.count}</small>
+                  <span>{group.name}</span><small>{initialProcesses.filter(p => p.family === group.name || p.group === group.name).length}</small>
                 </button>
                 {group.active && (
                   <div className="process-list">
@@ -126,9 +129,9 @@ export function ManufacturingLibrary({ initialProcesses }: Props) {
               </div>
             ))}
           </div>
-          <button className="browse-all"><Grid2X2 size={15} />Browse all processes</button>
+          <button className="browse-all" onClick={() => router.push("/processes")}><Grid2X2 size={15} />Browse all processes</button>
           <button className="add-process" onClick={() => setDialog("contribute")}><Plus size={15} />Add new process</button>
-          <div className="library-stat"><strong>103</strong><span>documented processes</span></div>
+          <div className="library-stat"><strong>{initialProcesses.length}</strong><span>documented processes</span></div>
         </aside>
 
         <section className="content">
@@ -141,8 +144,8 @@ export function ManufacturingLibrary({ initialProcesses }: Props) {
             <div className="hero-actions">
               <button onClick={() => setDialog("suggest")}><PencilLine size={16} /><span>Suggest change</span></button>
               <button className={favorite ? "is-favorite" : ""} onClick={() => setFavorite((value) => !value)}><Star size={16} fill={favorite ? "currentColor" : "none"} />{favorite ? "Saved" : "Save"}</button>
-              <button><Share2 size={16} /><span>Share</span></button>
-              <button className="primary"><Download size={16} /><span>Download</span></button>
+              <button onClick={() => { void navigator.clipboard?.writeText(window.location.href); }}><Share2 size={16} /><span>Copy link</span></button>
+              <button className="primary" onClick={() => { const blob = new Blob([`${selected.name}\n\n${selected.description}\n\nFeatures: ${selected.features.join(", ")}`], { type: "text/plain" }); const url = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = url; a.download = `${selected.slug}.txt`; a.click(); URL.revokeObjectURL(url); }}><Download size={16} /><span>Download</span></button>
             </div>
           </section>
 
@@ -169,7 +172,7 @@ export function ManufacturingLibrary({ initialProcesses }: Props) {
 
 function Overview({ process, mode }: { process: Process; mode: "text" | "visual" }) {
   if (mode === "visual") {
-    return <VisualGallery process={process} />;
+    return <VisualGallery key={process.slug} process={process} />;
   }
 
   return (
